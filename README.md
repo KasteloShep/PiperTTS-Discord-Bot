@@ -5,11 +5,12 @@ This Discord bot allows users to convert text to speech using pre-trained models
 
 ## Installation Guide using Docker
 
-1. Clone the repository:
+1. Clone the repository and copy your models .onnx in models foolder:
     ```bash
     git clone https://github.com/HirCoir/PiperTTS-Discord-Bot.git
     cd PiperTTS-Discord-Bot
     ```
+    
 
 2. Build the Docker image:
     ```bash
