@@ -7,7 +7,7 @@ import discord
 from discord import Client, File, Message
 
 # Define the bot token and configuration variables
-BOT_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  # Replace with your bot token
+BOT_TOKEN = "BOT_TOKEN"  # Replace with your bot token
 temp_audio_folder = "/piper/output/"  # Set the temporary audio folder
 piper_binary_path = "/usr/bin/piper"  # Set the Piper binary location
 model_folder = "/piper/models/"  # Set the .onnx model folder
@@ -34,7 +34,7 @@ channel_name_or_id = null
 def filter_text(text):
     # Filter unwanted characters and limit text length
     filtered_text = re.sub(r'[^\w\s,.:\u00C0-\u00FF]', '', text)  # Removed newline filter
-    return filtered_text[:40000]  # Increased limit to 1000 characters
+    return filtered_text[:4000]  # Increased limit to 4000 characters
 
 def convert_text_to_speech(text, model):
     filtered_text = filter_text(text)
