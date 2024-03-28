@@ -22,8 +22,8 @@ WORKDIR $PIPER_HOME
 COPY ./models/ $PIPER_HOME/models/
 COPY ./piper.py $PIPER_HOME/piper.py
 # Download ONNX models (Optional uwu)
-RUN wget https://huggingface.co/spaces/HirCoir/Piper-TTS-Spanish/resolve/main/es_MX-claude-14947-epoch-high.onnx -O $PIPER_HOME/models/es_MX-claude-14947-epoch-high.onnx && \
-    wget https://huggingface.co/spaces/HirCoir/Piper-TTS-Spanish/resolve/main/es_MX-claude-14947-epoch-high.onnx.json -O $PIPER_HOME/models/es_MX-claude-14947-epoch-high.onnx.json
+RUN wget https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_MX/claude/high/es_MX-claude-high.onnx -O $PIPER_HOME/models/es_MX-claude-14947-epoch-high.onnx && \
+    wget https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_MX/claude/high/es_MX-claude-high.onnx.json -O $PIPER_HOME/models/es_MX-claude-14947-epoch-high.onnx.json
 # Install dependencies
 RUN pip install discord
 # Create output directory
