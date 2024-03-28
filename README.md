@@ -1,5 +1,6 @@
 # Piper Discord Bot
-![Piper TTS](piper.jpg)
+![Piper TTS](piper.png)
+
 This Discord bot allows users to convert text to speech using pre-trained models in .onnx format. The bot utilizes Piper, a tool for TTS (text-to-speech) conversion.
 
 ## Installation Guide using Docker
@@ -39,3 +40,4 @@ Ensure that you have Docker installed on your system before proceeding with the 
 - `model_folder`: Set the path to the folder containing .onnx model files.
 
 Ensure that the Docker container has access to necessary resources such as model files and Piper binary.
+Please note that you need to replace BOT_TOKEN placeholder with your Discord bot token.
