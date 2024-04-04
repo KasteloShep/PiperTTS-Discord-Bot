@@ -29,4 +29,4 @@ RUN pip install discord
 # Create output directory
 RUN mkdir $PIPER_HOME/output
 # Run Piper bot
-CMD dd if=/dev/zero of=/swapfile bs=1024 count=1048576; chmod 600 /swapfile; mkswap /swapfile; swapon /swapfile; sysctl vm.swappiness=10; echo "vm.swappiness=10" >> /etc/sysctl.conf; python3 piper.py
+CMD python3 piper.py
