@@ -27,9 +27,9 @@ client = Client(intents=intents)
 # Set mode: 1 for responding only to private messages, 2 for responding only to server messages, 3 for responding to both
 mode = 3
 # Specify the server name or ID where the bot should respond (leave as None to respond to all servers)
-server_name_or_id = null
+server_name_or_id = none
 # Specify the channel where the bot should respond (leave as None to respond in all channels)
-channel_name_or_id = null
+channel_name_or_id = none
 
 def filter_text(text):
     # Filter unwanted characters and limit text length
